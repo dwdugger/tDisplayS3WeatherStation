@@ -18,7 +18,7 @@ ESP32Time rtc(0);
 //#################### EDIT THIS  ###################
 //time zone  
 int zone = -6;
-String town = "Norman, OK, US";
+String town = "Norman, Oklahoma, US";
 String myAPI = "9298910ab6da33279c011b17756759ba";
 String units = "imperial";  //  metric, imperial
 //#################### end of edits ###################
@@ -77,11 +77,12 @@ void setup() {
   sprite.createSprite(320, 170);
   errSprite.createSprite(164, 15);
 
-
+/*
   //set brightness
   ledcSetup(0, 10000, 8);
   ledcAttachPin(38, 0);
   ledcWrite(0, 130);
+*/
 
   //connect board to wifi , if cant, esp32 will make wifi network, connect to that network with password "password"
   WiFiManager wifiManager;
