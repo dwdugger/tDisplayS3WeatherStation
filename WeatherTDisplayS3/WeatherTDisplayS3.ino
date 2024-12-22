@@ -9,9 +9,9 @@
 #include "midleFont.h"
 #include "bigFont.h"
 #include "font18.h"
-TFT_eSPI tft = TFT_eSPI();
-TFT_eSprite sprite = TFT_eSprite(&tft);
-TFT_eSprite errSprite = TFT_eSprite(&tft);
+//TFT_eSPI tft = TFT_eSPI();
+//TFT_eSprite sprite = TFT_eSprite(&tft);
+//TFT_eSprite errSprite = TFT_eSprite(&tft);
 ESP32Time rtc(0);
 
 
@@ -76,7 +76,6 @@ void setup() {
   tft.drawString("Connecting to WIFI!!",30,50,4);
   sprite.createSprite(320, 170);
   errSprite.createSprite(164, 15);
-
 /*
   //set brightness
   ledcSetup(0, 10000, 8);
